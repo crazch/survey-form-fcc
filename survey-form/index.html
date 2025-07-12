@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Customer Survey Form</h1>
+  <p id="description">Your feedback helps us improve our service and menu.</p>
+  <form id="survey-form">
+
+    <fieldset>
+      <label id="name-label">Name:<input type="text" name="text" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label">Email:<input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+      <label id="number-label">Age (optional):<input type="number" name="age" id="number" min="13" max="120" placeholder="Enter your age"></label>
+    </fieldset>
+
+    <fieldset>
+      <label>
+        Which option best describes your current role?
+        <select id="dropdown">
+          <option>(Select)</option>
+          <option>Student</option>
+          <option>Professor</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you have issues with current service?</legend>
+      <label>
+        <input type="radio" name="answer" value="yes" checked> Yes</label>
+        <label><input type="radio" name="answer" value="no"> No</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What issues do you have with current pricing?</legend>
+      <label><input type="checkbox" value="too-expensive">Food is too expensive</label>
+      <label><input type="checkbox" value="low-quality">Low quality but high price</label>
+      <label><input type="checkbox" value="inconsistent-pricing">Inconsistent pricing</label>
+      <label>Any comments or suggestions?
+        <textarea rows="5" cols="20" id="comments" placeholder="i love fried rice..."></textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+  </body>
+</html>
